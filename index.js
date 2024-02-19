@@ -19,3 +19,15 @@ console.log(highlightedElement);
 //Ticket 1e - returns 'NodeList (3)' with all the highlighted elements listed
 let allHighlightedElements = document.querySelectorAll(".highlight")
 console.log(allHighlightedElements);
+
+// Ticket 2a
+// create new parent node (div element)
+// let newParentNode = document.createElement("div")
+// create unordered list (ul element)
+// document.createElement("ul")
+// newParentNode.appendChild("ul")
+let firstListItem = document.querySelector("#itemList li");
+let parentElement = firstListItem.parentNode;
+console.log(parentElement);
+
+
