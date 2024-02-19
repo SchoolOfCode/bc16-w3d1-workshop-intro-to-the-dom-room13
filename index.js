@@ -20,7 +20,7 @@ console.log(highlightedElement);
 let allHighlightedElements = document.querySelectorAll(".highlight")
 console.log(allHighlightedElements);
 
-// Ticket 2a
+// Ticket 2a: Parent Node
 // create new parent node (div element)
 // let newParentNode = document.createElement("div")
 // create unordered list (ul element)
@@ -30,4 +30,12 @@ let firstListItem = document.querySelector("#itemList li");
 let parentElement = firstListItem.parentNode;
 console.log(parentElement);
 
+// Ticket 2b: Child Nodes
+let itemList = document.querySelector("ul");
+let childNodes = itemList.childNodes;
+console.log(childNodes);
 
+// Ticket 2c: Element Children
+let itemList1 = document.querySelector("ul");
+let elementChildren = itemList1.children;
+console.log(elementChildren);
