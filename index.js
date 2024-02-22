@@ -39,3 +39,29 @@ console.log(childNodes);
 let itemList1 = document.querySelector("ul");
 let elementChildren = itemList1.children;
 console.log(elementChildren);
+
+// Ticket 2d: First and Last Child
+let firstLastChild = document.querySelector("ul");
+let firstChild = firstLastChild.firstElementChild;
+let lastChild = firstLastChild.lastElementChild;
+ console.log(firstChild);
+ console.log(lastChild);
+
+// Ticket 2e: Sibling Nodes
+
+// Ticket 3a: Set color
+titleElement.style.color = "red"
+titleElement.style.fontSize = "30px"
+
+// Ticket 3b: Creating and Adding Elements
+let para = document.createElement("p")
+para.textContent = "This is a dynamically added paragraph"
+document.body.appendChild
+
+// Ticket 3c: Modifying Text
+
+// Ticket 3d: Modifying Attributes
+
+// Ticket 3e: Adding and Removing Classes
+
+// Ticket 3f: Removing Elements
