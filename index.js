@@ -1,22 +1,23 @@
 console.log("Linked!");
 
+// Ticket 1a
 let titleElement = document.getElementById("title");
 console.log(titleElement);
 
-//Ticket 1b
+// Ticket 1b
 let contentClass = document.getElementsByClassName("content");
 console.log(contentClass);
 
-//Ticket 1c
+// Ticket 1c
 let listItemElements = document.getElementsByTagName("li");
 console.log(listItemElements);
 
-//Ticket 1d - shouldn't use querySelector as a variable as is not best practice;
+// Ticket 1d - shouldn't use querySelector as a variable as is not best practice;
 // have used .highlight to find the '.highlight' class in CSS file
 let highlightedElement = document.querySelector(".highlight");
 console.log(highlightedElement);
 
-//Ticket 1e - returns 'NodeList (3)' with all the highlighted elements listed
+// Ticket 1e - returns 'NodeList (3)' with all the highlighted elements listed
 let allHighlightedElements = document.querySelectorAll(".highlight")
 console.log(allHighlightedElements);
 
@@ -42,12 +43,20 @@ console.log(elementChildren);
 
 // Ticket 2d: First and Last Child
 let firstLastChild = document.querySelector("ul");
-let firstChild = firstLastChild.firstElementChild;
+let firstChild = firstLastChild.firstChild;
 let lastChild = firstLastChild.lastElementChild;
  console.log(firstChild);
  console.log(lastChild);
 
 // Ticket 2e: Sibling Nodes
+let sibling = document.querySelector("li.highlight")
+console.log(sibling)
+
+let nextSibling = sibling.nextSibling
+let previousSibling = sibling.previousElementSibling //Element rather than text node
+
+console.log(nextSibling)
+console.log(previousSibling)
 
 // Ticket 3a: Set color
 titleElement.style.color = "red"
@@ -59,6 +68,8 @@ para.textContent = "This is a dynamically added paragraph"
 document.body.appendChild
 
 // Ticket 3c: Modifying Text
+let para = document.createElement("p")
+
 
 // Ticket 3d: Modifying Attributes
 
